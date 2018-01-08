@@ -8,6 +8,7 @@ import { LayoutDefaultComponent } from './layout-default/layout-default.componen
 
 @NgModule({
   imports: [
+  	RouterModule,
   	SharedModule
   ],
   declarations: [LayoutDefaultComponent]
