@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 
-import { SharedModule} from '../shared/shared.module';
+import { SharedFeatureModule} from '../shared-feature/shared-feature.module';
 import { ClientesRoutingModule } from './clientes-routing.module'
 
 @NgModule({
   imports: [
 	ClientesRoutingModule,
-	SharedModule
+	SharedFeatureModule
   ],
   declarations: [
   	ClientesRoutingModule.components
