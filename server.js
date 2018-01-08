@@ -1,4 +1,5 @@
 //Install express server
+"use strict";
 const express = require('express');
 const app = express();
 
