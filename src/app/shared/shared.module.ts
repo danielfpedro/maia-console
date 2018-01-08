@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// import { SharedFeatureModule } from '../shared-feature/shared-feature.module';
+// import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MaterialModule} from './material.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    // BrowserAnimationsModule,
+    MaterialModule
+  ],
+  exports: [
+  	MaterialModule
   ],
   declarations: []
 })

@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { SharedModule} from '../shared/shared.module';
+import { CoreModule} from '../core';
+import { SharedModule } from '../shared';
 
 // Components
 import { LayoutDefaultComponent } from './layout-default/layout-default.component';
@@ -9,6 +10,10 @@ import { LayoutDefaultComponent } from './layout-default/layout-default.componen
 @NgModule({
   imports: [
   	RouterModule,
+  	CoreModule,
+  	SharedModule
+  ],
+  exports: [
   	SharedModule
   ],
   declarations: [LayoutDefaultComponent]
