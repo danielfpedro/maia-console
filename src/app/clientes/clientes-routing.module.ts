@@ -23,6 +23,6 @@ const routes: Routes = [
 })
 export class ClientesRoutingModule {
 	static components = [
-		ClientesListComponent, LayoutDefaultComponent
+		ClientesListComponent
 	];
 }
