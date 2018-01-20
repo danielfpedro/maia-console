@@ -8,11 +8,20 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  // background-color: green;
-  margin: 0;
+html, body {
   height: 100%;
+  margin: 0!important;
+  background-color: blue;
+  padding: 0;
+}
+// .buceta {
+//   background-color: red;
+// }
+.text-right {
+ text-align: right!important;
+}
+.text-center {
+  text-align: center;
 }
 
 .overlay {
@@ -73,4 +82,19 @@ body {
 
 .form-section-title{ 
   margin-top: 20px;
+}
+.btn-clean {
+  border: 0;
+  background: none;
+  cursor: pointer;
+
+}
+.btn-clean:focus {
+  outline: 0;
+}
+.img-rounded {
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+
+    border: 3px solid #6e7ed3;
 }

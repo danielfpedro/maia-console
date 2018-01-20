@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { ObservableMedia } from "@angular/flex-layout";
 
 @Component({
   selector: 'app-layout-default',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutDefaultComponent implements OnInit {
 
-  constructor() { }
+  @Input() snav;
+
+  constructor(private media: ObservableMedia) {
+
+  }
 
   ngOnInit() {
+    console.log('snab', this.snav);
+  }
+
+
+  sideNavControlOpened() {
+    return (this.media.isActive('gt-sm'));
+  }
+  sideNavControlMode() {
+    return (this.media.isActive('gt-sm')) ? 'side' : 'over';
   }
 
 }

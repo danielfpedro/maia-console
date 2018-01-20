@@ -1,8 +1,24 @@
-<button mat-button>sd</button>
-<mat-card>
-	ds
-</mat-card>
-<p>
-  layout-default works!
-</p>
-<router-outlet></router-outlet>
+<mat-sidenav-container fxFill>
+  <!-- SIDENAV CONTAINER -->
+  <mat-sidenav #snav [mode]="sideNavControlMode()" [opened]="sideNavControlOpened()" fxLayout="column">
+    <!-- SIDENAV TOOLBAR -->
+    <mat-toolbar color="secondary">
+      <h1>Maia e Rocha</h1>
+    </mat-toolbar>
+    <!-- MENU -->
+    <div fxFlex class="menu-container">
+      <app-main-menu></app-main-menu>
+    </div>
+  </mat-sidenav>
+  <!-- CONTENT -->
+  <mat-sidenav-content fxLayout="column">
+    <!-- Navbar -->
+    <app-navbar [snav]="snav"></app-navbar>
+    <div class="main-content">
+      <div class="buceta">
+        Buceta
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
